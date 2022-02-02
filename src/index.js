@@ -5,7 +5,7 @@ import './styles/Index.css'
 
 
 ReactDOM.render(
-  <React.StrictMode className='game'>
+  <React.StrictMode >
     <App  />
   </React.StrictMode>,
   document.getElementById('root')
