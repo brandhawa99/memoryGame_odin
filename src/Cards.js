@@ -1,14 +1,13 @@
 import './styles/card.css'
+import uniqid from 'uniqid';
+
 const Cards = props =>{
 
     return (
-        <div className='container' key={props.key}>
-            <img src={props.source} alt="img">
-            </img>
-            <span>{props.text}</span>
+        <div onClick={props.click}  className='container' key={props.keyProp}>
+            <img key={props.text} name={props.nameProp}src={props.source} alt="img" />
         </div>
     )
-
 }
 
 export default Cards;
