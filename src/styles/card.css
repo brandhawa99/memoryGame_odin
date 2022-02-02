@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  height: 15rem;
+  border: black 2px solid;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  font-size: 1.25rem;
+  font-weight: 600;
+  justify-content: space-around;
+  background-color: hsl(59, 49%, 67%);
+  border-radius: 0.25rem;
+}
