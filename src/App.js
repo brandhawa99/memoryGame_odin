@@ -6,14 +6,13 @@ import uniqid from 'uniqid';
 
 
 function App() {
-    let mappedJSX; 
     const [highScore, setHighScore] = useState(0);
     const [characterList, setCharacterList] = useState([]);
     const [picks, setPicks] = useState([]);
 
 
     useEffect(()=>{
-      fetch('https://api.giphy.com/v1/gifs/search?api_key=sie8Ps0BAnPHWypSTu6B56eGeGS2Nkyz&q=dog&limit=16&offset=0&rating=g&lang=en')
+      fetch('https://api.giphy.com/v1/gifs/search?api_key=sie8Ps0BAnPHWypSTu6B56eGeGS2Nkyz&q=home&limit=16&offset=0&rating=g&lang=en')
         .then(response =>{
           if(response.ok){
             return response.json();
@@ -64,12 +63,12 @@ function App() {
         }
       }
 
-      const checkWin = () =>{
-        if(picks.length >= characterList.length){
-          return true;
-        } 
-        return(false);
-      }
+      // const checkWin = () =>{
+      //   if(picks.length >= characterList.length){
+      //     return true;
+      //   } 
+      //   return(false);
+      // }
       const resetGame = () =>{
         setPicks([]);
 
