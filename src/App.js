@@ -12,7 +12,7 @@ function App() {
 
 
     useEffect(()=>{
-      fetch('https://api.giphy.com/v1/gifs/search?api_key=sie8Ps0BAnPHWypSTu6B56eGeGS2Nkyz&q=home&limit=16&offset=0&rating=g&lang=en')
+      fetch('https://api.giphy.com/v1/gifs/search?api_key=sie8Ps0BAnPHWypSTu6B56eGeGS2Nkyz&q=houses&limit=16&offset=0&rating=g&lang=en')
         .then(response =>{
           if(response.ok){
             return response.json();
